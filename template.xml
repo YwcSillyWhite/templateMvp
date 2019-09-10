@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="mvp"
+    minApi="7"
+    minBuildApi="14"
+    description="一键构建纯白架构mvp模式">
+
+    <category value="purewhite" />
+    <formfactor value="Mobile" />
+
+    <!-- input data -->
+
+    <parameter
+        id="frameName"
+        name="frame Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="Pure"
+        help="架构名字" />
+
+    <parameter
+        id="packageName"
+        name="package Name"
+        type="string"
+        constraints="package"
+        default="com.pure.white"
+        help="包名，与你包名一致，不然会报错" />
+
+
+
+
+    <!--  isMvp  -->
+    <parameter
+        id="isMvp"
+        name="is mvp"
+        type="boolean"
+        default="true"
+        help="是否启动mvp架构" />
+
+    <parameter
+        id="presenterName"
+        name="presenter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="PurePresenter"
+        suggest="${packageName}Presenter"
+        visibility="isMvp"
+        help="presenter类" />
+
+    <parameter
+        id="presenterPackageName"
+        name="prensenter Package"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.presenter"
+        visibility="isMvp"
+        help="presenter类存放目录" />
+
+    <parameter
+        id="contractName"
+        name="contract Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="PureContract"
+        suggest="${packageName}Contract"
+        visibility="isMvp"
+        help="Contract类" />
+
+    <parameter
+        id="contractPackageName"
+        name="contract Package"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.contract"
+        visibility="isMvp"
+        help="contract类存放目录" />
+
+
+
+
+
+
+    <!--  isActivity -->
+    <parameter
+        id="isActivity"
+        name="is Activity"
+        type="boolean"
+        default="true"
+        help="是否使用activity" />
+    <parameter
+        id="activityName"
+        name="activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="PureActivity"
+        suggest="${packageName}Activity"
+        visibility="isMvp"
+        help="Activity类" />
+
+
+    <!-- 128x128 thumbnails relative to com.puke.template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_cover.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

@@ -45,7 +45,7 @@
         type="string"
         constraints="class|unique|nonempty"
         default="PurePresenter"
-        suggest="${packageName}Presenter"
+        suggest="${frameName}Presenter"
         visibility="isMvp"
         help="presenter类" />
 
@@ -64,7 +64,7 @@
         type="string"
         constraints="class|unique|nonempty"
         default="PureContract"
-        suggest="${packageName}Contract"
+        suggest="${frameName}Contract"
         visibility="isMvp"
         help="Contract类" />
 
@@ -76,9 +76,6 @@
         suggest="${packageName}.mvp.contract"
         visibility="isMvp"
         help="contract类存放目录" />
-
-
-
 
 
 
@@ -95,9 +92,18 @@
         type="string"
         constraints="class|unique|nonempty"
         default="PureActivity"
-        suggest="${packageName}Activity"
+        suggest="${frameName}Activity"
         visibility="isMvp"
         help="Activity类" />
+    <parameter
+        id="activityLayout"
+        name="activity layout"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="activity_pure"
+        suggest="${activityToLayout(activityName)}"
+        visibility="isMvp"
+        help="Activity类布局" />
 
 
     <!-- 128x128 thumbnails relative to com.puke.template.xml -->

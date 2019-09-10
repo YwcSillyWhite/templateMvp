@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81abd6f1-36b4-46fe-ad27-1c37c4845119" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl" afterDir="false" />
-    </list>
+    <list default="true" id="81abd6f1-36b4-46fe-ad27-1c37c4845119" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" selection-start-line="20" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="240">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="525">
+              <caret line="35" column="89" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -120,10 +118,10 @@
         <option value="$PROJECT_DIR$/globals.xml.ftl" />
         <option value="$PROJECT_DIR$/template.xml" />
         <option value="$PROJECT_DIR$/recipe.xml.ftl" />
-        <option value="$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl" />
         <option value="$PROJECT_DIR$/root/res/layout/layout_pure.xml.ftl" />
         <option value="$PROJECT_DIR$/root/src/app_package/PureAdapter.java.ftl" />
         <option value="$PROJECT_DIR$/root/src/app_package/PurePresenter.java.ftl" />
+        <option value="$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl" />
         <option value="$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl" />
       </list>
     </option>
@@ -139,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,7 +181,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568128968570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fragment加入适配器">
+      <created>1568129325300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568129325300</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -297,7 +302,8 @@
     <MESSAGE value="mvp 基本形态" />
     <MESSAGE value="加入fragment" />
     <MESSAGE value="加入recyclerview" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入recyclerview" />
+    <MESSAGE value="fragment加入适配器" />
+    <option name="LAST_COMMIT_MESSAGE" value="fragment加入适配器" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/root/AndroidManifest.xml.ftl">
@@ -341,6 +347,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/root/src/app_package/PureContract.java.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/root/res/layout/layout_pure.xml.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -351,24 +364,17 @@
     <entry file="file://$PROJECT_DIR$/root/res/layout/adapter_pure.xml.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="133" column="26" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/src/app_package/PureContract.java.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/root/src/app_package/PurePresenter.java.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="26" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -381,15 +387,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" selection-start-line="20" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="525">
+          <caret line="35" column="89" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
         </state>
       </provider>
     </entry>

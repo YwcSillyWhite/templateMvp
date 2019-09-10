@@ -33,7 +33,7 @@ public class ${fragmentName} extends BaseMvpFragment<${fragmentBind},${basePrese
          <#if isRecyclerview>
             adapter=new ${adapterName}();
             mDataBinding.recyclerView.setAdapter(adapter);
-            mDataBinding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext));
+            mDataBinding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
          </#if>
     }
 

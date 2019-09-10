@@ -5,7 +5,7 @@
     <global id="relativePackage" value="<#if relativePackage?has_content>${relativePackage}<#else>${packageName}</#if>" />
 
 
-
+     <global id="srcActivityOut" value="${srcDir}/${slashedPackageName(activityPackageName)}" />
 
 
 </globals>

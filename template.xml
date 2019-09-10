@@ -104,7 +104,14 @@
         suggest="${activityToLayout(activityName)}"
         visibility="isMvp"
         help="Activity类布局" />
-
+    <parameter
+        id="activityPackageName"
+        name="activity Package"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp.activity"
+        visibility="isActivity"
+        help="activity类存放目录" />
 
     <!-- 128x128 thumbnails relative to com.puke.template.xml -->
     <thumbs>

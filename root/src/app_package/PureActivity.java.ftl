@@ -14,6 +14,7 @@ import com.purewhite.ywc.purewhitelibrary.mvp.presenter.BasePresenter;
 </#if>
 <#if isRecyclerview>
 import ${packageName}.mvp.adapter.${adapterName};
+import androidx.recyclerview.widget.LinearLayoutManager;
 </#if>
 
 public class ${activityName} extends BaseMvpActivity<${activityBind},${basePresenter}> ${contractImp} {

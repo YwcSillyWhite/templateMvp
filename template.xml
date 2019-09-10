@@ -89,7 +89,7 @@
         constraints="class|unique|nonempty"
         default="PureActivity"
         suggest="${frameName}Activity"
-        visibility="isMvp"
+        visibility="isActivity"
         help="Activity类" />
     <parameter
         id="activityLayout"
@@ -98,7 +98,7 @@
         constraints="layout|unique|nonempty"
         default="activity_pure"
         suggest="${activityToLayout(activityName)}"
-        visibility="isMvp"
+        visibility="isActivity"
         help="Activity类布局" />
 
 
@@ -129,6 +129,14 @@
         help="Fragment类布局" />
 
 
+    <!-- isSwip -->
+    <parameter
+        id="isSwipe"
+        name="is swip"
+        type="boolean"
+        default="false"
+        help="是否使用swipeLayout" />
+
     <!-- isRecyclerView  -->
     <parameter
         id="isRecyclerview"
@@ -154,6 +162,9 @@
         suggest="adapter_${classToResource(frameName)}"
         visibility="isRecyclerview"
         help="adapter类布局" />
+
+
+
 
     <!-- 128x128 thumbnails relative to com.puke.template.xml -->
     <thumbs>

@@ -12,6 +12,9 @@ import ${presenterPackageName}.${presenterName};
 <#else>
 import com.purewhite.ywc.purewhitelibrary.mvp.presenter.BasePresenter;
 </#if>
+<#if isSwipe>
+import com.purewhite.ywc.purewhitelibrary.adapter.swipe.SwipLoadListener;
+</#if>
 <#if isRecyclerview>
 import ${packageName}.mvp.adapter.${adapterName};
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,6 +25,14 @@ public class ${fragmentName} extends BaseMvpFragment<${fragmentBind},${basePrese
    <#if isRecyclerview>
    private ${adapterName} adapter;
    </#if>
+   <#if isSwipe>
+   private SwipLoadListener swipLoadListener=new SwipLoadListener() {
+        @Override
+        public void pullDown() {
+
+        }
+   };
+   </#if>
 
    @Override
     protected int getLayout() {
@@ -30,6 +41,9 @@ public class ${fragmentName} extends BaseMvpFragment<${fragmentBind},${basePrese
 
     @Override
     protected void initView() {
+         <#if isSwipe>
+            mDataBinding.swipeLayout.setOnLoadLinstener(swipLoadListener);
+         </#if>
          <#if isRecyclerview>
             adapter=new ${adapterName}();
             mDataBinding.recyclerView.setAdapter(adapter);

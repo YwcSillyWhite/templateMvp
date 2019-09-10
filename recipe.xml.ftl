@@ -24,5 +24,12 @@
                 to="${escapeXmlAttribute(resOut)}/layout/${fragmentLayout}.xml" />
     </#if>
 
+
+    <#if isRecyclerview>
+         <instantiate from="root/src/app_package/PureAdapter.java.ftl"
+     		    to="${escapeXmlAttribute(srcOut)}/mvp/adapter/${adapterName}.java" />
+         <instantiate from="root/res/layout/adapter_pure.xml.ftl"
+                to="${escapeXmlAttribute(resOut)}/layout/${adapterLayout}.xml" />
+    </#if>
     
 </recipe>

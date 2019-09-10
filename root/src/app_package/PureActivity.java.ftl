@@ -12,8 +12,15 @@ import ${presenterPackageName}.${presenterName};
 <#else>
 import com.purewhite.ywc.purewhitelibrary.mvp.presenter.BasePresenter;
 </#if>
+<#if isRecyclerview>
+import ${packageName}.mvp.adapter.${adapterName};
+</#if>
 
 public class ${activityName} extends BaseMvpActivity<${activityBind},${basePresenter}> ${contractImp} {
+
+   <#if isRecyclerview>
+   private ${adapterName} adapter;
+   </#if>
 
    @Override
     protected int getLayout() {
@@ -22,7 +29,11 @@ public class ${activityName} extends BaseMvpActivity<${activityBind},${basePrese
 
     @Override
     protected void initView() {
-
+        <#if isRecyclerview>
+        adapter=new ${adapterName}();
+        mDataBinding.recyclerView.setAdapter(adapter);
+        mDataBinding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        </#if>
     }
 
     <#if !isMvp>

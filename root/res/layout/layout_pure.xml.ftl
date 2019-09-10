@@ -4,5 +4,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <#if isRecyclerview>
+        <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/recycler_view">
+        </androidx.recyclerview.widget.RecyclerView>
+        </#if>
     </LinearLayout>
 </layout>

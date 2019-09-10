@@ -129,6 +129,32 @@
         help="Fragment类布局" />
 
 
+    <!-- isRecyclerView  -->
+    <parameter
+        id="isRecyclerview"
+        name="is Recyclerview"
+        type="boolean"
+        default="false"
+        help="是否使用recyclerview" />
+    <parameter
+        id="adapterName"
+        name="adapter name"
+        type="string"
+        constraints="class|unique|nonempty"
+        suggest="${frameName}Adapter"
+        visibility="isRecyclerview"
+        default="Pure"
+        help="适配器名字，一般为架构名字" />
+    <parameter
+        id="adapterLayout"
+        name="adapter layout"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="adapter_pure"
+        suggest="adapter_${classToResource(frameName)}"
+        visibility="isRecyclerview"
+        help="adapter类布局" />
+
     <!-- 128x128 thumbnails relative to com.puke.template.xml -->
     <thumbs>
         <!-- default thumbnail is required -->

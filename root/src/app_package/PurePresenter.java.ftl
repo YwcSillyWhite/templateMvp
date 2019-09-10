@@ -1,6 +1,7 @@
 package ${presenterPackageName};
 
-import ${packageName}.purewhitelibrary.mvp.presenter.PresenterImp;
+import ${contractPackageName}.${contractName};
+import com.purewhite.ywc.purewhitelibrary.mvp.presenter.BasePresenter;
 
-public class ${presenterName} extends PresenterImp<${contractName}.UiView> implements ${contractName}.Presenter {
+public class ${presenterName} extends BasePresenter<${contractName}.UiView> implements ${contractName}.Presenter {
 }

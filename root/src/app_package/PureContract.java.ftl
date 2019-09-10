@@ -1,15 +1,15 @@
 package ${contractPackageName};
 
-import ${packageName}.purewhitelibrary.mvp.presenter.BasePresenter;
-import ${packageName}.purewhitelibrary.mvp.view.BaseUiView;
+import com.purewhite.ywc.purewhitelibrary.mvp.view.IBaseUiView;
+import com.purewhite.ywc.purewhitelibrary.mvp.presenter.IBasePresenter;
 
 public class ${contractName} {
-    interface UiView extends BaseUiView
+    public interface UiView extends IBaseUiView
     {
 
     }
 
-    interface Presenter extends BasePresenter<UiView>
+    public interface Presenter extends IBasePresenter<UiView>
     {
 
     }

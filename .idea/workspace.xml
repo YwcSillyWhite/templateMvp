@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81abd6f1-36b4-46fe-ad27-1c37c4845119" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/globals.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/globals.xml.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/recipe.xml.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/src/app_package/PureContract.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/root/src/app_package/PureContract.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/src/app_package/PurePresenter.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/root/src/app_package/PurePresenter.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/template.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="105">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -29,17 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/globals.xml.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="195">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recipe.xml.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            <state relative-caret-position="420">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -65,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="1890">
+              <caret line="126" column="43" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -88,18 +97,20 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/mvp.iml" />
         <option value="$PROJECT_DIR$/root/src/app_package/MainActivity.java.ftl" />
-        <option value="$PROJECT_DIR$/template.xml" />
-        <option value="$PROJECT_DIR$/globals.xml.ftl" />
-        <option value="$PROJECT_DIR$/recipe.xml.ftl" />
         <option value="$PROJECT_DIR$/root/src/app_package/PurePresenter.java.ftl" />
         <option value="$PROJECT_DIR$/root/src/app_package/PureContract.java.ftl" />
         <option value="$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl" />
+        <option value="$PROJECT_DIR$/template.xml" />
+        <option value="$PROJECT_DIR$/globals.xml.ftl" />
+        <option value="$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl" />
+        <option value="$PROJECT_DIR$/recipe.xml.ftl" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="21" />
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="1659" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,7 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +161,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -162,11 +173,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/root/src/app_package" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/root/res" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/root/src/app_package" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,14 +224,22 @@
       <option name="project" value="LOCAL" />
       <updated>1568102326126</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mvp 基本形态">
+      <created>1568106349722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568106349722</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <frame x="21" y="23" width="1659" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15973479" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16178267" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -240,7 +259,8 @@
     <MESSAGE value="注解" />
     <MESSAGE value="activity基本功能完成" />
     <MESSAGE value="简易mvp功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="简易mvp功能" />
+    <MESSAGE value="mvp 基本形态" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvp 基本形态" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/root/AndroidManifest.xml.ftl">
@@ -275,22 +295,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/root/src/app_package/PureActivity.java.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/src/app_package/PureFragment.java.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/globals.xml.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipe.xml.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        <state relative-caret-position="195">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -310,8 +330,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state relative-caret-position="1890">
+          <caret line="126" column="43" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe.xml.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>

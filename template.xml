@@ -28,7 +28,21 @@
         default="com.pure.white"
         help="包名，与你包名一致，不然会报错" />
 
+    <parameter
+        id="filePackageName"
+        name="filePackage Name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}.mvp"
+        default="com.pure.white.mvp"
+        help="文件包名" />
 
+    <parameter
+        id="isFile"
+        name="is file"
+        type="boolean"
+        default="true"
+        help="是否放在相同文件下，如果不是相同文件下，就放在file下的（activity，presenter，fragment，contract文件下）" />
 
 
     <!--  isMvp  -->
@@ -48,16 +62,6 @@
         suggest="${frameName}Presenter"
         visibility="isMvp"
         help="presenter类" />
-
-    <parameter
-        id="presenterPackageName"
-        name="prensenter Package"
-        type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.presenter"
-        visibility="isMvp"
-        help="presenter类存放目录" />
-
     <parameter
         id="contractName"
         name="contract Name"
@@ -68,14 +72,6 @@
         visibility="isMvp"
         help="Contract类" />
 
-    <parameter
-        id="contractPackageName"
-        name="contract Package"
-        type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.contract"
-        visibility="isMvp"
-        help="contract类存放目录" />
 
 
 
@@ -104,14 +100,34 @@
         suggest="${activityToLayout(activityName)}"
         visibility="isMvp"
         help="Activity类布局" />
+
+
+    <!--  isActivity -->
     <parameter
-        id="activityPackageName"
-        name="activity Package"
+        id="isFragment"
+        name="is Fragment"
+        type="boolean"
+        default="false"
+        help="是否使用fragment" />
+    <parameter
+        id="fragmentName"
+        name="fragment Name"
         type="string"
-        constraints="package"
-        suggest="${packageName}.mvp.activity"
-        visibility="isActivity"
-        help="activity类存放目录" />
+        constraints="class|unique|nonempty"
+        default="PureFragment"
+        suggest="${frameName}Fragment"
+        visibility="isFragment"
+        help="Fragment类" />
+    <parameter
+        id="fragmentLayout"
+        name="fragment layout"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="fragment_pure"
+        suggest="fragment_${classToResource(frameName)}"
+        visibility="isFragment"
+        help="Fragment类布局" />
+
 
     <!-- 128x128 thumbnails relative to com.puke.template.xml -->
     <thumbs>

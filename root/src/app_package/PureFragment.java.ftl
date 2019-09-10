@@ -1,9 +1,9 @@
-package ${activityPackageName};
+package ${fragmentPackageName};
 
 
-import ${packageName}.databinding.${activityBind};
+import ${packageName}.databinding.${fragmentBind};
 import ${packageName}.R;
-import com.purewhite.ywc.purewhitelibrary.mvp.activity.BaseMvpActivity;
+import com.purewhite.ywc.purewhitelibrary.mvp.fragment.BaseMvpFragment;
 <#if isMvp>
 <#if !isFile>
 import ${contractPackageName}.${contractName};
@@ -13,11 +13,11 @@ import ${presenterPackageName}.${presenterName};
 import com.purewhite.ywc.purewhitelibrary.mvp.presenter.BasePresenter;
 </#if>
 
-public class ${activityName} extends BaseMvpActivity<${activityBind},${basePresenter}> ${contractImp} {
+public class ${fragmentName} extends BaseMvpFragment<${fragmentBind},${basePresenter}> ${contractImp} {
 
    @Override
     protected int getLayout() {
-        return R.layout.${activityLayout};
+        return R.layout.${fragmentLayout};
     }
 
     @Override

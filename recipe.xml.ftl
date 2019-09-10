@@ -17,5 +17,12 @@
                 to="${escapeXmlAttribute(resOut)}/layout/${activityLayout}.xml" />                
     </#if>
 
+    <#if isFragment>
+         <instantiate from="root/src/app_package/PureFragment.java.ftl"
+     		    to="${baseDir}/${slashedPackageName(fragmentPackageName)}/${fragmentName}.java" />
+         <instantiate from="root/res/layout/layout_pure.xml.ftl"
+                to="${escapeXmlAttribute(resOut)}/layout/${fragmentLayout}.xml" />
+    </#if>
+
     
 </recipe>
